@@ -30,6 +30,7 @@ public class StatsServiceTest {
     public void shouldCalcMonthWithMaxSales() {
         int actual = service.calcMonthWithMaxSales(sales);
         int expected = 8;
+
         Assertions.assertEquals(expected, actual);
     }
 
@@ -37,6 +38,7 @@ public class StatsServiceTest {
     public void shouldCalcMonthWithMinSales() {
         int actual = service.calcMonthWithMinSales(sales);
         int expected = 9;
+
         Assertions.assertEquals(expected, actual);
     }
 
@@ -44,6 +46,7 @@ public class StatsServiceTest {
     public void shouldCalcCountOfMonthWithBelowAvgSales() {
         int actual = service.calcCountOfMonthWithBelowAvgSales(sales);
         int expected = 5;
+
         Assertions.assertEquals(expected, actual);
     }
 
@@ -51,6 +54,7 @@ public class StatsServiceTest {
     public void shouldCalcCountOfMonthWithAboveAvgSales() {
         int actual = service.calcCountOfMonthWithAboveAvgSales(sales);
         int expected = 5;
+
         Assertions.assertEquals(expected, actual);
     }
 }
