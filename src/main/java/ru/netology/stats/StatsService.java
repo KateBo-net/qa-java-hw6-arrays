@@ -4,8 +4,8 @@ public class StatsService {
 
     public int calcSalesAmount(int[] sales) {
         int sumOfSales = 0;
-        for (int i : sales) {
-            sumOfSales += i;
+        for (int sale : sales) {
+            sumOfSales += sale;
         }
         return sumOfSales;
     }
@@ -37,8 +37,8 @@ public class StatsService {
     public int calcCountOfMonthWithBelowAvgSales(int[] sales) {
         int countOfMonth = 0;
         int avgOfSales = calcAvgSalesInMonth(sales);
-        for (int i : sales) {
-            if (i < avgOfSales) {
+        for (int sale : sales) {
+            if (sale < avgOfSales) {
                 countOfMonth++;
             }
         }
